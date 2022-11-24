@@ -11,8 +11,8 @@
        name: httpd
        state: started
        enabled: yes
-   - name: copy index.html to webservers 
+   - name: copy file 
      ansible.builtin.copy:
-       src: /home/vagrant/ansible/index.html
+       src: index.html
        dest: /var/www/html/index.html
 ...
