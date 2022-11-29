@@ -1,0 +1,8 @@
+---
+- hosts: webservers
+
+  roles:
+    - role: httpd
+      when: ansible_os_family == "RedHat"
+
+...
